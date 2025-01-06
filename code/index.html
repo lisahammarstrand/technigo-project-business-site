@@ -1,17 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
-    <!-- Don't forget to link the CSS file here! -->
-  </head>
-  <body>
-    <h1>Business name 🌻</h1>
 
-    <!-- Video or image as a header is cool :) -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snowbizz</title>
+  <!-- Don't forget to link the CSS file here! -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <header>
+    <!-- Some kind of logo and navbar -->
+    <nav class="navbar">
+      <img class="logo" src="assets/LHP logo blue@2x.svg" alt="logo">
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+          <li>
+            <a href="">PRODUCTS</a>
+          </li>
+          <li>
+            <a href="">SERVICES</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <div>
+      <h1>Snowbizz ❄️</h1>
+    </div>
+  </header>
+  <!-- Video or image as a header is cool :) -->
+  <main>
     <!-- Signup form -->
+    <section class="signup-form">
+      <h2>Sign up and get a snowy t-shirt!</h2>
+      <form action="http://httpbin.org/anything" method="post">
+        <fieldset>
+          <label>
+            <span>Namn</span>
+            <input type="text" name="namn" placeholder="Lisa Larsson" required>
+          </label>
+          <label>
+            <span>E-mail</span>
+            <input type="email" name="E-mail" placeholder="lisa@larsson.se" required>
+          </label>
+          <label>
+            <span>Adress</span>
+            <input type="text" name="Adress" placeholder="Gruvgatan 24" required>
+          </label>
+          <label>
+            <span>Postnummer</span>
+            <input type="text" name="Postnummer" placeholder="123 24" required>
+          </label>
+          <label>
+            <span>Ort</span>
+            <input type="text" name="Ort" placeholder="Falstad" required>
+          </label>
+          <label>
+            <span>Land</span>
+            <select name="land">
+              <option value="sverige">Sverige</option>
+              <option value="norge">Norge</option>
+              <option value="finland">Finland</option>
+            </select>
+          </label>
+          <label>
+            <span>Telnr</span>
+            <input type="text" name="Telefonnummer" placeholder="0768234567">
+          </label>
+        </fieldset>
+        <button type="submit">Sign me up!</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy LH Production 2025</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Products</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
 
-  </body>
 </html>
