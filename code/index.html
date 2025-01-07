@@ -76,6 +76,23 @@
             <span>Telnr</span>
             <input type="text" name="Telefonnummer" placeholder="0768234567">
           </label>
+          <label>
+            <span>Username:</span>
+            <input type="text" name="username" required>
+          </label>
+          <label>
+            <span>Password:</span>
+            <input type="password" name="pwd" required>
+          </label>
+          <label>
+            <span>Yes or No</span>
+            <input type="radio" name="yesorno" value="yes">Yes
+            <input type="radio" name="yesorno" value="no"> No
+          </label>
+          <label>
+            <span>I accept the terms & conditions</span>
+            <input type="checkbox" name="terms" value="accept" required>
+          </label>
         </fieldset>
         <button type="submit">Sign me up!</button>
       </form>
@@ -83,7 +100,7 @@
   </main>
   <footer>
     <p>&copy LH Production 2025</p>
-    <nav>
+    <nav class="footer-nav">
       <ul>
         <li>
           <a href="">About</a>
